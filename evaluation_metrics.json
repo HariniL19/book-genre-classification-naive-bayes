@@ -1,0 +1,461 @@
+{
+  "accuracy": 0.675,
+  "precision_macro": 0.7291666666666667,
+  "recall_macro": 0.675,
+  "f1_macro": 0.6746482683982684,
+  "precision_weighted": 0.7291666666666667,
+  "recall_weighted": 0.675,
+  "f1_weighted": 0.6746482683982683,
+  "classification_report": {
+    "Fantasy": {
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9090909090909091,
+      "support": 5.0
+    },
+    "Fiction": {
+      "precision": 0.42857142857142855,
+      "recall": 0.6,
+      "f1-score": 0.5,
+      "support": 5.0
+    },
+    "Historical Fiction": {
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1-score": 0.5714285714285714,
+      "support": 5.0
+    },
+    "Horror": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1-score": 0.75,
+      "support": 5.0
+    },
+    "Mystery": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 5.0
+    },
+    "Romance": {
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1-score": 0.4,
+      "support": 5.0
+    },
+    "Science Fiction": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 5.0
+    },
+    "Thriller": {
+      "precision": 0.5714285714285714,
+      "recall": 0.8,
+      "f1-score": 0.6666666666666666,
+      "support": 5.0
+    },
+    "accuracy": 0.675,
+    "macro avg": {
+      "precision": 0.7291666666666667,
+      "recall": 0.675,
+      "f1-score": 0.6746482683982684,
+      "support": 40.0
+    },
+    "weighted avg": {
+      "precision": 0.7291666666666667,
+      "recall": 0.675,
+      "f1-score": 0.6746482683982683,
+      "support": 40.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      0,
+      3,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      3,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      4
+    ]
+  ],
+  "classes": [
+    "Fantasy",
+    "Fiction",
+    "Historical Fiction",
+    "Horror",
+    "Mystery",
+    "Romance",
+    "Science Fiction",
+    "Thriller"
+  ],
+  "class_priors": {
+    "Fantasy": 0.12500000000000003,
+    "Fiction": 0.12500000000000003,
+    "Historical Fiction": 0.12500000000000003,
+    "Horror": 0.12500000000000003,
+    "Mystery": 0.12500000000000003,
+    "Romance": 0.12500000000000003,
+    "Science Fiction": 0.12500000000000003,
+    "Thriller": 0.12500000000000003
+  },
+  "vocabulary_size": 2121,
+  "total_train_samples": 160,
+  "total_test_samples": 40,
+  "total_samples": 200,
+  "alpha_smoothing": 1.0,
+  "test_samples": [
+    {
+      "title": "The Shadow King's Fortress",
+      "description": "A fellowship comprising an elven ranger, a dwarf warrior, and a hedge mage journeys across enchanted forests and volcanic peaks to destroy a cursed artifact.",
+      "genre": "Fantasy",
+      "predicted_genre": "Fantasy",
+      "is_correct": true
+    },
+    {
+      "title": "The Codebreaker of Bletchley Park",
+      "description": "Brilliant women mathematicians and linguists work in secrecy in World War II Britain to decipher German Enigma naval ciphers and alter the course of the war.",
+      "genre": "Historical Fiction",
+      "predicted_genre": "Thriller",
+      "is_correct": false
+    },
+    {
+      "title": "Sweet Confections and Second Chances",
+      "description": "High school sweethearts reunite ten years later when both return to their small coastal town to run competing bakeries, reigniting long-suppressed sparks.",
+      "genre": "Romance",
+      "predicted_genre": "Fiction",
+      "is_correct": false
+    },
+    {
+      "title": "Nanotech Rebellion",
+      "description": "Microscopic nanomachines designed to cure human cellular aging evolve hive-mind intelligence, threatening to consume all organic matter in a grey goo apocalypse.",
+      "genre": "Science Fiction",
+      "predicted_genre": "Science Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "The Midnight Alibi",
+      "description": "Detective Inspector Thomas investigates the suspicious death of a wealthy collector found poisoned behind the locked doors of his private study with no weapon present.",
+      "genre": "Mystery",
+      "predicted_genre": "Mystery",
+      "is_correct": true
+    },
+    {
+      "title": "Inheritance of Light",
+      "description": "Three estranged sisters gather to settle their eccentric grandmother's estate, rekindling childhood disputes while discovering surprising truths about their lineage.",
+      "genre": "Fiction",
+      "predicted_genre": "Romance",
+      "is_correct": false
+    },
+    {
+      "title": "Dead Man's Gambit",
+      "description": "A master chess grandmaster collapses mid-tournament; homicide investigators must analyze the board positions and player rivalries to uncover how poison was delivered.",
+      "genre": "Mystery",
+      "predicted_genre": "Mystery",
+      "is_correct": true
+    },
+    {
+      "title": "Parasite of the Mind",
+      "description": "A cosmic microscopic parasite infects hosts, inducing severe hallucinations, grotesque biological mutations, self-mutilation, and an uncontrollable urge to kill.",
+      "genre": "Horror",
+      "predicted_genre": "Science Fiction",
+      "is_correct": false
+    },
+    {
+      "title": "The Dyson Sphere Incident",
+      "description": "Astrophysicists exploring an artificial megastructure enveloping an alien star discover that the dying sun inside is being harvested by hyper-advanced extraterrestrial beings.",
+      "genre": "Science Fiction",
+      "predicted_genre": "Science Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "Flight into Danger",
+      "description": "A corporate pilot transporting a witness under federal protection is forced to crash-land in the Alaskan wilderness while armed mercenaries pursue them.",
+      "genre": "Thriller",
+      "predicted_genre": "Thriller",
+      "is_correct": true
+    },
+    {
+      "title": "The Moonlit Coven",
+      "description": "A sisterhood of forest witches channels moonlight magic, herbal charms, and ancestral spirits to safeguard their sacred glade from an invading inquisitor army.",
+      "genre": "Fantasy",
+      "predicted_genre": "Fantasy",
+      "is_correct": true
+    },
+    {
+      "title": "The Bookseller of Rue Saint-Denis",
+      "description": "An aging Parisian antiquarian bookshop owner forms an unexpected friendship with an eccentric customer, rediscovering his passion for life, literature, and human connection.",
+      "genre": "Fiction",
+      "predicted_genre": "Romance",
+      "is_correct": false
+    },
+    {
+      "title": "A Kiss at Midnight",
+      "description": "A masquerade New Year's Eve ball yields an unforgettable midnight kiss between two strangers who spend the following year searching high and low for one another.",
+      "genre": "Romance",
+      "predicted_genre": "Fiction",
+      "is_correct": false
+    },
+    {
+      "title": "Terminal Velocity",
+      "description": "A skydiving instructor suspects that a billionaire's fatal parachute malfunction was premeditated murder, uncovering a plot involving sabotage and millions in insurance.",
+      "genre": "Thriller",
+      "predicted_genre": "Mystery",
+      "is_correct": false
+    },
+    {
+      "title": "Hostage in the Sky",
+      "description": "Armed hijackers seize control of a transatlantic passenger flight at 35,000 feet, demanding the release of an international arms dealer or passengers die.",
+      "genre": "Thriller",
+      "predicted_genre": "Thriller",
+      "is_correct": true
+    },
+    {
+      "title": "The Curse of Willow Creek",
+      "description": "A cursed wooded hollow awakens an ancient demonic evil that possesses unsuspecting campers, turning nightfall into a terrifying ritual of blood and screams.",
+      "genre": "Horror",
+      "predicted_genre": "Horror",
+      "is_correct": true
+    },
+    {
+      "title": "The Berlin Wall Diary",
+      "description": "Divided by concrete and barbed wire in Cold War 1960s East Berlin, two siblings communicate via coded postcards while planning a daring underground tunnel escape.",
+      "genre": "Historical Fiction",
+      "predicted_genre": "Thriller",
+      "is_correct": false
+    },
+    {
+      "title": "The Warsaw Ghetto Violin",
+      "description": "In Nazi-occupied Warsaw, a Jewish classical violinist plays concerts in secret attics to sustain hope among community members organizing the historic ghetto uprising.",
+      "genre": "Historical Fiction",
+      "predicted_genre": "Historical Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "Silent Witnesses",
+      "description": "An astute coroner finds discrepancies in an apparent suicide autopsy, prompting a covert reinvestigation into corrupt officials and hidden forensic evidence.",
+      "genre": "Mystery",
+      "predicted_genre": "Thriller",
+      "is_correct": false
+    },
+    {
+      "title": "The Asylum of Forgotten Souls",
+      "description": "Urban explorers venture inside an abandoned psychiatric hospital only to be trapped with vengeful spectral apparitions, decaying hallways, and horrifying screams.",
+      "genre": "Horror",
+      "predicted_genre": "Horror",
+      "is_correct": true
+    },
+    {
+      "title": "The Viking Skald",
+      "description": "In ninth-century Scandinavia, a Norse poet journeys aboard longships across stormy seas to Anglo-Saxon England, singing sagas of kings, raids, and conquest.",
+      "genre": "Historical Fiction",
+      "predicted_genre": "Historical Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "Fragments of Autumn",
+      "description": "An introspective novel exploring modern loneliness, corporate alienation, and the small acts of kindness that keep city dwellers anchored during dark times.",
+      "genre": "Fiction",
+      "predicted_genre": "Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "Song of the Sea Siren",
+      "description": "Merfolk kingdoms clash with oceanic leviathans as a water sorceress uses melodic spellcasting to calm ancient sea deities threatening coastal realms.",
+      "genre": "Fantasy",
+      "predicted_genre": "Fantasy",
+      "is_correct": true
+    },
+    {
+      "title": "The Crawling Dead",
+      "description": "A biological pathogen escapes a biohazard lab, turning deceased corpses into decomposing flesh-eating zombies that overwhelm suburban survivors.",
+      "genre": "Horror",
+      "predicted_genre": "Horror",
+      "is_correct": true
+    },
+    {
+      "title": "Wormhole Odyssey",
+      "description": "An exploratory spacecraft traverses an unstable Einstein-Rosen bridge, emerging in an unexplored sector of the Andromeda galaxy facing hostile alien armadas.",
+      "genre": "Science Fiction",
+      "predicted_genre": "Science Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "The Crystal Spire",
+      "description": "A floating citadel powered by radiant crystal energy begins losing altitude when a rogue sorcerer siphons its magical core to summon demonic familiars.",
+      "genre": "Fantasy",
+      "predicted_genre": "Fantasy",
+      "is_correct": true
+    },
+    {
+      "title": "The Extraction Specialist",
+      "description": "An elite private security contractor is hired to extract an American corporate hostage from an active warzone in North Africa before ransom deadlines expire.",
+      "genre": "Thriller",
+      "predicted_genre": "Thriller",
+      "is_correct": true
+    },
+    {
+      "title": "A Tapestry of Small Things",
+      "description": "A lyrical exploration of domestic life, chronicling twenty-four hours in the minds of a struggling married couple navigating economic uncertainty and marital fatigue.",
+      "genre": "Fiction",
+      "predicted_genre": "Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "The Gliese Emissary",
+      "description": "First contact with a non-humanoid alien species forces xenobiologists to decipher non-verbal chemical communication before military factions initiate orbital bombardment.",
+      "genre": "Science Fiction",
+      "predicted_genre": "Science Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "Second Time Around",
+      "description": "Divorced and weary of modern dating, two neighbors in their forties form a tentative friendship that gradually rekindles hope, tenderness, and passionate romance.",
+      "genre": "Romance",
+      "predicted_genre": "Fiction",
+      "is_correct": false
+    },
+    {
+      "title": "Letters from the Trenches",
+      "description": "A young British soldier in the mud and barbed wire of the Western Front during World War I writes letters to his sweetheart while enduring shellfire in the Somme.",
+      "genre": "Historical Fiction",
+      "predicted_genre": "Romance",
+      "is_correct": false
+    },
+    {
+      "title": "The Watchmaker's Secret",
+      "description": "A vintage clock contains a hidden key and a dying confession, launching a retired inspector into a cold case murder that took place thirty years ago.",
+      "genre": "Mystery",
+      "predicted_genre": "Mystery",
+      "is_correct": true
+    },
+    {
+      "title": "The Cobblestone Murders",
+      "description": "Victorian police detectives race against time to profile a serial killer who leaves playing cards and cryptic Latin notes beside victims in dimly lit alleyways.",
+      "genre": "Mystery",
+      "predicted_genre": "Mystery",
+      "is_correct": true
+    },
+    {
+      "title": "The Biohazard Breach",
+      "description": "A weaponized viral strain is stolen from a level-4 military laboratory, setting off a frantic 48-hour global manhunt to intercept the terrorist courier.",
+      "genre": "Thriller",
+      "predicted_genre": "Thriller",
+      "is_correct": true
+    },
+    {
+      "title": "To Love a Rogue",
+      "description": "A witty Regency romance involving a reformed rake who bets he can woo an unimpressed bluestocking, only to lose his own heart completely in the chase.",
+      "genre": "Romance",
+      "predicted_genre": "Romance",
+      "is_correct": true
+    },
+    {
+      "title": "Maps for Lost Travelers",
+      "description": "A cartographer struggling with early-onset memory loss embarks on a solo walking tour across Ireland to reconnect with his estranged daughter before memories fade.",
+      "genre": "Fiction",
+      "predicted_genre": "Fiction",
+      "is_correct": true
+    },
+    {
+      "title": "Memory Matrix Overload",
+      "description": "In a dystopian metropolis where memory implants can be edited and erased, a memory technician discovers his own childhood memories belong to an executed political dissident.",
+      "genre": "Science Fiction",
+      "predicted_genre": "Fiction",
+      "is_correct": false
+    },
+    {
+      "title": "The Blood Ritual",
+      "description": "A secretive pagan cult hidden in the deep Appalachian woods kidnaps tourists to sacrifice their blood to an ancient horned god lurking beneath the soil.",
+      "genre": "Horror",
+      "predicted_genre": "Fantasy",
+      "is_correct": false
+    },
+    {
+      "title": "The Duke's Reluctant Bride",
+      "description": "In Regency London, an outspoken lady enters a marriage of convenience with an aloof, brooding duke, only for mutual respect to bloom into passionate romance.",
+      "genre": "Romance",
+      "predicted_genre": "Romance",
+      "is_correct": true
+    },
+    {
+      "title": "Blood of the Phoenix",
+      "description": "A sacred fiery bird bestows immortality and healing flames upon a wounded knight, drawing the wrath of an immortal warlock seeking eternal dominion.",
+      "genre": "Fantasy",
+      "predicted_genre": "Fantasy",
+      "is_correct": true
+    }
+  ]
+}
